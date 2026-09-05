@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IGNIX OP Admin | Champion League Kishtwar</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body class="admin-page">
+<header class="nav"><a class="brand" href="/">IGNIX <span>OP</span></a><a href="/">PUBLIC SITE</a></header>
+<main class="section admin">
+  <div id="loginBox" class="form-card">
+    <p class="eyebrow">PRIVATE CONTROL PANEL</p><h1>ADMIN LOGIN</h1>
+    <label>Admin Password<input id="adminPassword" type="password" autocomplete="current-password"></label>
+    <button class="btn primary wide" id="loginBtn">LOGIN</button>
+    <p id="loginStatus" class="form-status"></p>
+  </div>
+
+  <div id="dashboard" hidden>
+    <div class="admin-head"><div><p class="eyebrow">IGNIX OP</p><h1>TOURNAMENT CONTROL</h1></div><button class="btn ghost" id="logoutBtn">LOGOUT</button></div>
+    <div class="admin-stats" id="adminStats"></div>
+
+    <section class="form-card">
+      <div class="admin-section-head"><h2>REGISTRATIONS</h2><button class="btn ghost" id="refreshBtn">REFRESH</button></div>
+      <div class="table-wrap"><table id="regTable"><thead><tr><th>ID</th><th>Team</th><th>Captain</th><th>Players / UIDs</th><th>Payment</th><th>Status</th><th>Action</th></tr></thead><tbody></tbody></table></div>
+    </section>
+
+    <section class="form-card">
+      <div class="admin-section-head"><h2>FINAL STANDINGS</h2><button class="btn primary" id="saveStandings">SAVE STANDINGS</button></div>
+      <p class="muted">Enter the final-stage total points and kills for each qualified team. The public leaderboard can use this data after saving.</p>
+      <div class="table-wrap"><table id="standingsTable"><thead><tr><th>Rank</th><th>Team</th><th>Points</th><th>Kills</th></tr></thead><tbody></tbody></table></div>
+      <p id="standingsStatus" class="form-status"></p>
+    </section>
+  </div>
+</main>
+<script src="/admin.js"></script>
+</body>
+</html>

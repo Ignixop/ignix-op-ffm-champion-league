@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Free Fire MAX Champion League Kishtwar | IGNIX OP</title>
+  <meta name="description" content="Free Fire MAX Champion League Kishtwar — register your squad, pay the ₹200 entry fee and compete for ₹1,800 in prizes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#top">IGNIX <span>OP</span></a>
+  <nav>
+    <a href="#format">Format</a>
+    <a href="#prizes">Prizes</a>
+    <a href="#rules">Rules</a>
+    <a href="#register">Register</a>
+  </nav>
+  <a class="nav-admin" href="/admin.html">ADMIN</a>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="eyebrow">ORGANIZED BY IGNIX OP • KISHTWAR ESPORTS</p>
+      <h1>FREE FIRE MAX<br><span>CHAMPION LEAGUE</span></h1>
+      <p class="location">KISHTWAR</p>
+      <p class="tagline">BATTLE • SURVIVE • WIN</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#register">REGISTER YOUR SQUAD</a>
+        <a class="btn ghost" href="#format">VIEW TOURNAMENT</a>
+      </div>
+      <div class="stats">
+        <div><b>12</b><span>TEAMS</span></div>
+        <div><b>4</b><span>PLAYERS / TEAM</span></div>
+        <div><b>₹200</b><span>ENTRY / TEAM</span></div>
+        <div><b>8</b><span>TOTAL MATCHES</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="format">
+    <div class="section-head">
+      <p class="eyebrow">COMPETITION SYSTEM</p>
+      <h2>TOURNAMENT FORMAT</h2>
+    </div>
+    <div class="timeline">
+      <article><span>01</span><h3>LEAGUE STAGE</h3><p>All 12 registered teams play 5 matches. League points determine the top 6.</p></article>
+      <article><span>02</span><h3>TOP 6 QUALIFY</h3><p>The six highest-scoring teams advance. Final-stage points are reset to zero.</p></article>
+      <article><span>03</span><h3>FINAL STAGE</h3><p>Top 6 teams play 3 final matches. Highest final-stage total wins.</p></article>
+    </div>
+  </section>
+
+  <section class="section split" id="prizes">
+    <div>
+      <p class="eyebrow">PRIZE POOL</p>
+      <h2>₹1,800</h2>
+      <p class="muted">Prize distribution is fixed before the tournament begins.</p>
+    </div>
+    <div class="prize-grid">
+      <div><small>1ST</small><strong>₹1,000</strong></div>
+      <div><small>2ND</small><strong>₹500</strong></div>
+      <div><small>3RD</small><strong>₹300</strong></div>
+    </div>
+  </section>
+
+  <section class="section" id="scoring">
+    <div class="section-head"><p class="eyebrow">POINT SYSTEM</p><h2>SCORING</h2></div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Placement</th><th>Points</th><th>Placement</th><th>Points</th></tr></thead>
+        <tbody>
+          <tr><td>1st</td><td>12</td><td>7th</td><td>4</td></tr>
+          <tr><td>2nd</td><td>9</td><td>8th</td><td>3</td></tr>
+          <tr><td>3rd</td><td>8</td><td>9th</td><td>2</td></tr>
+          <tr><td>4th</td><td>7</td><td>10th</td><td>1</td></tr>
+          <tr><td>5th</td><td>6</td><td>11th–12th</td><td>0</td></tr>
+          <tr><td colspan="3">Each kill</td><td>+1</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Tie-breaker: most kills → best individual match placement.</p>
+  </section>
+
+  <section class="section" id="rules">
+    <div class="section-head"><p class="eyebrow">COMPETITIVE INTEGRITY</p><h2>RULES</h2></div>
+    <div class="rules">
+      <p><b>01.</b> No hacks, scripts, injectors, modified files or third-party cheating apps.</p>
+      <p><b>02.</b> Cheating results in immediate disqualification and no prize.</p>
+      <p><b>03.</b> No teaming or collusion with another participating squad.</p>
+      <p><b>04.</b> Only registered 4-player squads are allowed.</p>
+      <p><b>05.</b> Players must use their registered in-game IDs.</p>
+      <p><b>06.</b> Room ID/password must not be shared publicly.</p>
+      <p><b>07.</b> Players must join before the announced start time.</p>
+      <p><b>08.</b> Exploiting glitches/bugs is prohibited.</p>
+      <p><b>09.</b> Disputes require valid screenshot/video evidence.</p>
+      <p><b>10.</b> Admin decision is final for rules violations and disputes.</p>
+      <p><b>11.</b> Prize payout occurs after result and eligibility verification.</p>
+      <p><b>12.</b> Tie-breakers follow the published scoring system.</p>
+    </div>
+  </section>
+
+  <section class="section register" id="register">
+    <div class="section-head">
+      <p class="eyebrow">12 SLOTS ONLY</p>
+      <h2>REGISTER YOUR SQUAD</h2>
+      <p class="muted">Entry fee: <b>₹200 per team</b>. Pay the organizer first. A registration code is issued only after your payment is confirmed.</p>
+    </div>
+
+    <div class="slot-card">
+      <div><span>LIVE SLOTS</span><strong id="slotCount">Loading…</strong></div>
+      <div class="slot-bar"><i id="slotBar"></i></div>
+      <small id="slotMessage">Checking registration status…</small>
+    </div>
+
+    <div id="codeGate" class="form-card code-gate">
+      <div class="gate-icon">✓</div>
+      <p class="eyebrow">PAYMENT VERIFIED BY ORGANIZER</p>
+      <h3>ENTER REGISTRATION CODE</h3>
+      <p class="muted">Make the ₹200 payment to IGNIX OP first. Enter the unique code given to you after the payment has been confirmed.</p>
+      <form id="codeForm">
+        <label>Registration Code<input id="registrationCode" maxlength="30" required autocomplete="off" placeholder="Enter your unique code"></label>
+        <button class="btn primary wide" type="submit" id="verifyBtn">VERIFY CODE</button>
+        <p id="codeStatus" class="form-status"></p>
+      </form>
+    </div>
+
+    <div id="registrationFormWrap" hidden>
+      <div class="payment-instructions form-card">
+        <h3>STEP 2 — SUBMIT YOUR SQUAD</h3>
+        <p>Your registration code has been verified. Complete all team details below.</p>
+        <p class="muted">Do not share your registration code with anyone. Each code can be used only once.</p>
+      </div>
+
+      <form id="registerForm" class="form-card">
+        <input type="hidden" name="registrationCode" id="verifiedRegistrationCode">
+        <div class="verified-code"><span>CODE VERIFIED</span><b id="verifiedCodeLabel"></b></div>
+        <div class="form-grid">
+          <label>Team Name<input name="teamName" maxlength="40" required placeholder="e.g. Kishtwar Kings"></label>
+          <label>Captain Name<input name="captainName" maxlength="50" required placeholder="Full name"></label>
+          <label>WhatsApp Number<input name="phone" inputmode="tel" maxlength="15" required placeholder="10-digit number"></label>
+          <label>Email<input name="email" type="email" maxlength="100" required placeholder="For registration receipt"></label>
+        </div>
+        <h3>REGISTERED PLAYERS</h3>
+        <div class="form-grid four">
+          <label>Player 1 / Captain<input name="player1" maxlength="40" required></label>
+          <label>Player 2<input name="player2" maxlength="40" required></label>
+          <label>Player 3<input name="player3" maxlength="40" required></label>
+          <label>Player 4<input name="player4" maxlength="40" required></label>
+        </div>
+        <div class="form-grid">
+          <label>In-game ID 1<input name="uid1" maxlength="30" required></label>
+          <label>In-game ID 2<input name="uid2" maxlength="30" required></label>
+          <label>In-game ID 3<input name="uid3" maxlength="30" required></label>
+          <label>In-game ID 4<input name="uid4" maxlength="30" required></label>
+        </div>
+        <label class="check"><input type="checkbox" name="agree" required> I have read and accept the tournament rules and understand that cheating can result in disqualification.</label>
+        <button class="btn primary wide" type="submit" id="submitBtn">SUBMIT PAID REGISTRATION</button>
+        <p id="formStatus" class="form-status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div><b>FREE FIRE MAX CHAMPION LEAGUE KISHTWAR</b><span>Organized by IGNIX OP</span></div>
+  <a href="https://instagram.com/yt.ignixop" target="_blank" rel="noopener">@yt.ignixop</a>
+  <small>Community tournament. Not affiliated with or endorsed by Garena.</small>
+</footer>
+<script src="/script.js"></script>
+</body>
+</html>
