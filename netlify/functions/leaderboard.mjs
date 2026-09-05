@@ -1,0 +1,2 @@
+import { json, getRegistrations } from "./_utils.mjs";
+export default async()=>{const rows=(await getRegistrations()).filter(r=>r.paymentStatus==="PAID" && r.registrationStatus!=="REJECTED" && Number(r.finalPoints)>=0).sort((a,b)=>(b.finalPoints||0)-(a.finalPoints||0)||(b.finalKills||0)-(a.finalKills||0)); return json({rows:rows.map(r=>({teamName:r.teamName,points:r.finalPoints||0,kills:r.finalKills||0}))});};
