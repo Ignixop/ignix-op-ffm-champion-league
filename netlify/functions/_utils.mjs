@@ -37,3 +37,17 @@ export async function getRegistrations() {
 export async function saveRegistrations(rows) {
   await store().setJSON("registrations", rows);
 }
+
+/* Admin authentication */
+export function makeAdminToken() {
+  return process.env.ADMIN_PASSWORD || "";
+}
+
+export function validAdmin(request) {
+  const auth = request.headers.get("authorization") || "";
+  const token = auth.startsWith("Bearer ")
+    ? auth.slice(7)
+    : "";
+
+  return !!process.env.ADMIN_PASSWORD && token === process.env.ADMIN_PASSWORD;
+}
